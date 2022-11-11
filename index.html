@@ -15,18 +15,19 @@
                     <button class="sketch" onclick="colorChange('black')">Sketch</button>
                     <button class="erase" onclick="colorChange('white')">Erase</button>
                     <input type="button" value="Reset" onClick="window.location.reload(true)">
+                    <div class="boardsz">
+                        <input
+                            type="text"
+                            placeholder="Size of the board"
+                            value="16"
+                            onchange="boardSize(this.value)"
+                         />
+                         <button>Change</button>
+                         <p>The value must be between 2 and 100</p>
+                    </div>
+                 </div>
                 </div>
-                <div class="boardsz">
-                    <input
-                        type="text"
-                        placeholder="Size of the board"
-                        value="16"
-                        onchange="boardSize(this.value)"
-                     />
-                     <button>Change</button>
-                     <p>The value must be between 2 and 100</p>
-                </div>
-             </div>
+
         </div>
     </body>
     <script src="main.js"></script>
