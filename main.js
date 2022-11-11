@@ -1,4 +1,5 @@
-let color= "black"
+let color= "black";
+let click= true;
 
 function createBoard (size) {
     let board= document.querySelector (".board");
@@ -15,7 +16,7 @@ function createBoard (size) {
 }
 
 function colorPixel () {
-    this.style.backgroundColor= color;
+    if (click) {this.style.backgroundColor= color;}
 }
 
 
@@ -30,12 +31,16 @@ function boardSize (input) {
            
 }
 
-// Creat colorChange Function
-// add white to errasor
-// add black to sketch
-// link with buttons
 function colorChange (choice) {
     color= choice;
 }
+
+//Draw on click
+
+document.querySelector("body").addEventListener("click", (e) => {
+    if (e.target.tagName != "BUTTON") {
+      click = !click;}
+    })
+
 
 createBoard (16);
