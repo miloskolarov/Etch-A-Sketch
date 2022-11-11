@@ -23,11 +23,9 @@ function colorPixel () {
 function boardSize (input) {
     if (input >= 2 && input <= 100) {createBoard (input);
     } else if (input <2  || input > 100) { 
-            let boardsz= document.querySelector(".boardsz");
-            let error= document.createElement("p");
-            error.textContent= "Value must be between 2 and 100";
-            error.style.color="red";
-            boardsz.insertAdjacentElement("beforeend", error);}
+        window.alert( "The value must be between 2 and 100");
+          
+    }
            
 }
 
