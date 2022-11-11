@@ -15,8 +15,17 @@
                     <button class="sketch">Sketch</button>
                     <button class="erase">Erase</button>
                     <button class="reset">Reset</button>
-             </div>
                 </div>
+                <div class="board-size">
+                    <input
+                        type="text"
+                        placeholder="Size of the board"
+                        value="16"
+                        onchange="boardSize(this.value)"
+                     />
+                     <button>Change</button>
+                </div>
+             </div>
         </div>
     </body>
     <script src="main.js"></script>
