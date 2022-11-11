@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+body {
+    background-color: rgb(220, 219, 219);
+}
+
 .buttons {
     margin-top: 10px;
     display:flex;
@@ -12,9 +16,10 @@
 }
 
 .board {
-    
+    background-color: white;
     height: 500px;
     width: 500px;
     display: grid;
     border: 2px solid black;
+    
 }
