@@ -7,3 +7,8 @@ for (let i=0; i< 256; i++) {
     pixel.style.backgroundColor= "black";
     board.insertAdjacentElement("beforeend", pixel);
 }
+
+    //Make divs change color on mouse over
+        //make changeColor function
+        //Call makeColor funcition inside eventListener method
+        //Make placeholder variable containing color
