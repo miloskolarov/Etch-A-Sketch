@@ -16,12 +16,20 @@ function colorPixel () {
     this.style.backgroundColor= "black";
 }
 
-//chage size based on input
-    //Add input field in html
-    //Add input from html to a function
+//Add error message if input is too large or too small
+    //create else if in boardSize function
+        //if input is smaller than two, or larger than 100 print error
+            //Print error inside a paragraph
 
 function boardSize (input) {
-    createBoard (input); 
+    if (input >= 2 && input <= 100) {createBoard (input);
+    } else if (input <2  || input > 100) { 
+            let boardsz= document.querySelector(".boardsz");
+            let error= document.createElement("p");
+            error.textContent= "Input must be between 2 and 100";
+            error.style.color="red";
+            boardsz.insertAdjacentElement("beforeend", error);}
+           
 }
 
 createBoard (16);
