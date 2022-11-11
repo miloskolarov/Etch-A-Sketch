@@ -8,11 +8,14 @@ for (let i=0; i< 256; i++) {
     board.insertAdjacentElement("beforeend", pixel);
 }
 
-    //Make divs change color on mouse over
-        //make changeColor function
-        //Call makeColor funcition inside eventListener method
-        //Make placeholder variable containing color
 
 function colorPixel () {
     this.style.backgroundColor= "black";
 }
+
+//Make board size dinamic
+    //put board inside a function
+        //add size parametar to the function
+    //modify "for" loop to use input size
+    //Change predefined pixel count to dinamic
+        //create pixelCount variable that equals to size*size
